@@ -1,0 +1,4 @@
+#reasoning_to_message_settings .inline-drawer-content p small {
+    color: var(--text01, #999);
+    line-height: 1.5;
+}

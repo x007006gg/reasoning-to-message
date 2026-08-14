@@ -1,0 +1,25 @@
+<div id="reasoning_to_message_settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <div class="flex-container alignitemscenter margin0">
+                <b>思维链搬运工 (Reasoning to Message)</b>
+            </div>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <p>
+                <small>
+                    当模型把正文也输出到思维链、导致正文为空时，自动把思维链内容搬运到正文，并清空思维链。
+                </small>
+            </p>
+            <label class="checkbox_label" for="reasoning_to_message_enabled" title="启用后，助手消息正文为空且思维链非空时自动搬运。">
+                <input id="reasoning_to_message_enabled" type="checkbox" checked />
+                <span>启用自动搬运</span>
+            </label>
+            <label class="checkbox_label" for="reasoning_to_message_log" title="在浏览器控制台输出每次搬运的调试日志。">
+                <input id="reasoning_to_message_log" type="checkbox" />
+                <span>输出调试日志</span>
+            </label>
+        </div>
+    </div>
+</div>
