@@ -7,12 +7,12 @@ import {
     saveChatDebounced,
     syncMesToSwipe,
     updateMessageBlock,
-} from '../../../script.js';
-import { renderExtensionTemplateAsync } from '../../extensions.js';
-
-export { MODULE_NAME };
+} from '../../../../script.js';
+import { renderExtensionTemplateAsync } from '../../../extensions.js';
 
 const MODULE_NAME = 'reasoning-to-message';
+
+export { MODULE_NAME };
 
 /** 扩展自身设置的默认值。 */
 const defaultSettings = {
@@ -50,7 +50,7 @@ function isMesEmpty(mes) {
 }
 
 /**
- * 核心搬移逻辑：当一条助手消息正文完全为空、而思维链非空时,
+ * 核心搬移逻辑：当一条助手消息正文完全为空、而思维链非空时，
  * 把思维链内容搬到正文，并清空思维链。
  *
  * @param {number} messageId 目标消息的绝对索引
