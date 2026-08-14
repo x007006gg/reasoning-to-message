@@ -7,8 +7,5 @@
     "css": "style.css",
     "author": "TauriTavern",
     "version": "1.0.0",
-    "homePage": "https://github.com/Darkatse/TauriTavern",
-    "hooks": {
-        "activate": "init"
-    }
+    "homePage": "https://github.com/Darkatse/TauriTavern"
 }
