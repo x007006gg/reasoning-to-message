@@ -11,6 +11,7 @@ import {
 import { renderExtensionTemplateAsync } from '../../../extensions.js';
 
 const MODULE_NAME = 'reasoning-to-message';
+const EXTENSION_NAME = `third-party/${MODULE_NAME}`;
 
 export { MODULE_NAME };
 
@@ -166,7 +167,7 @@ export async function init() {
             return;
         }
 
-        const settingsHtml = await renderExtensionTemplateAsync(MODULE_NAME, 'settings', { defaultSettings });
+        const settingsHtml = await renderExtensionTemplateAsync(EXTENSION_NAME, 'settings', { defaultSettings });
 
         // 自建容器挂到右侧系统设置栏末尾，不依赖具体容器 id。
         const mount = document.getElementById('extensions_settings2') || document.getElementById('extensions_settings');
